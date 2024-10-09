@@ -1,0 +1,88 @@
+/* General body styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #84c225; /* BigBasket green color */
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1000; /* Ensures the navbar appears on top */
+}
+
+/* Logo styling */
+.logo a {
+    color: #ffffff; /* White color for contrast */
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+    max-width: 600px; /* Limits the size of the search bar */
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #ff6f00; /* BigBasket-like orange for the search button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.search-bar button:hover {
+    background-color: #e65c00; /* Darker shade of orange */
+}
+
+/* Navigation links styling */
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #ffffff; /* White text for the navbar links */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #ff6f00; /* BigBasket-like orange for hover effect */
+    text-decoration: underline;
+}
+
+/* Ensuring the login form is not overridden by navbar styling */
+.login-container {
+    margin-top: 100px; /* Adds space between navbar and form */
+}

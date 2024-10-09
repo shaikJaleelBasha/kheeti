@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <!-- Link to the external CSS file using Thymeleaf -->
+    <link rel="stylesheet" th:href="@{/css/header.css}">
+</head>
+<body>
+    <header th:fragment="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">KHEETI</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for Products">
+                <button>Search</button>
+            </div>
+            <ul class="nav-links">
+                <li><a th:href="@{/home}">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a th:href="@{/login}">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
